@@ -17,6 +17,9 @@ package 'ntp'
  
 template '/etc/motd' do
   source 'motd.erb'
+  variables(
+    :name => 'My name is Mitchell'
+  )
   action :create
 end
 
